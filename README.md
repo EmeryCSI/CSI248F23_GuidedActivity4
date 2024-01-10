@@ -67,7 +67,7 @@ This repository is a part of CSI-248 at Renton Technical College.
 
 6. Take a screenshot of your browser and save it to your Screenshots folder.
 
-![Alt text](<Images/GA4 - Lets Create Some Pages - Step 6.png>)
+![Alt text](<Images/GA4 - Project Setup - Step 7.png>)
 
 7. Once you have verified they are working you can remove the components from inside of the return(). We are going to render these based on a route.
 
