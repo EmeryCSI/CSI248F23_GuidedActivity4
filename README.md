@@ -45,7 +45,7 @@ This repository is a part of CSI-248 at Renton Technical College.
 6. In Terminal, type `npm run dev`. Make sure you are in the citylist folder.
 7. You should have just App as an H2 showing on the page.
 
-![Alt text](<Images/GA4 - Project Setup - Step 6.png>)
+![Alt text](<Images/GA4 - Project Setup - Step 7.png>)
 
 8. Take a screenshot of the browser and save it to the Screenshots folder.
 9. `git add .`
@@ -67,7 +67,7 @@ This repository is a part of CSI-248 at Renton Technical College.
 
 6. Take a screenshot of your browser and save it to your Screenshots folder.
 
-![Alt text](<Images/GA4 - Project Setup - Step 7.png>)
+![Alt text](<Images/GA4 - Lets Create Some Pages - Step 6.png>)
 
 7. Once you have verified they are working you can remove the components from inside of the return(). We are going to render these based on a route.
 
