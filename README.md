@@ -1,5 +1,6 @@
 # Renton Technical College CSI-248
-<br />    
+
+<br />
 
 <div align="center">  
     <img src="logo.jpg" alt="Logo">
@@ -24,7 +25,7 @@ This repository is a part of CSI-248 at Renton Technical College.
 11. `npm install`
 12. `npm install react-router-dom`
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/65edb0e8-a79b-4efc-9460-1c352a86061e)
+![Alt text](<Images/GA4 - Step 12.png>)
 
 13. Run `mkdir Screenshots` to create a Screenshots folder.
 
@@ -34,18 +35,17 @@ This repository is a part of CSI-248 at Renton Technical College.
 2. Create a basic h2 inside of a fragment for App.jsx.
 3. Take a screenshot and save it to your screenshot folder.
 
-![GA4 - Part 2 - Step 3](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/90283966/c0492ec8-e5d7-4cea-80bf-7b5eb9ddcee9)
+![Alt text](<Images/GA4 - Project Setup - Step 3.png>)
 
 4. Included in the repository is a cities.js file, paste the contents of that file at the top of App.jsx
 5. When complete your App.jsx should look like this. Notice that I have collapsed the cities array here, it is taking up 27 lines of code.
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/76d406d5-d1a2-4ac7-b4b9-e3f8fffab910)
+![Alt text](<Images/GA4 - Project Setup - Step 5.png>)
 
-
-6. In Terminal, type `npm run dev`.  Make sure you are in the citylist folder.
+6. In Terminal, type `npm run dev`. Make sure you are in the citylist folder.
 7. You should have just App as an H2 showing on the page.
 
-![GA4 - Part 2 - Step 6](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/90283966/0c92e0ff-d3f5-4f1c-a0c3-dfff00ace689)
+![Alt text](<Images/GA4 - Project Setup - Step 6.png>)
 
 8. Take a screenshot of the browser and save it to the Screenshots folder.
 9. `git add .`
@@ -58,44 +58,43 @@ This repository is a part of CSI-248 at Renton Technical College.
 2. Within this folder create the following Components. Create.jsx, Details.jsx, Home.jsx, and List.jsx
 3. Within each component simply create an h2 with the name of the component.
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/367beb61-cb87-4c75-93ac-16f75d7c406e)
-
+![Alt text](<Images/GA4 - Lets Create Some Pages - Step 3.png>)
 
 4. Let's first test these new components out and make sure they are working.
 5. Inside App.jsx import each of these components and display them on the page.
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/c69f9fc6-9b38-46ae-ab36-e0e78d75964a)
+![Alt text](<Images/GA4 - Lets Create Some Pages - Step 5.png>)
 
 6. Take a screenshot of your browser and save it to your Screenshots folder.
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/d0f34534-ac0a-40e3-84cf-b7859ca06815)
+![Alt text](<Images/GA4 - Lets Create Some Pages - Step 6.png>)
 
 7. Once you have verified they are working you can remove the components from inside of the return(). We are going to render these based on a route.
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/375d8ab1-0e14-46bd-b012-1c017b957649)
+![Alt text](<Images/GA4 - Lets Create Some Pages - Step 7.png>)
 
 8. Lets create some Routes. We need to import some Components from react-router-dom. Add this to the top of App.jsx
 
-```import { BrowserRouter, Route, Routes } from "react-router-dom";```
+`import { BrowserRouter, Route, Routes } from "react-router-dom";`
 
 9. The BrowserRouter component must wrap all components that will use Routing
 10. Within the BrowserRouter we will define Routes using the Routes and Route components
 11. Replace the code inside of App.jsx with the following:
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/df53b001-c0a4-4f8b-8573-75d70922b219)
+![Alt text](<Images/GA4 - Lets Create Some Pages - Step 11.png>)
 
 12. We have defined 4 routes. If no route is provided we will show the Home Page.
-13. If we navigate to /cities we will show the List page. 
+13. If we navigate to /cities we will show the List page.
 
-![GA4 - Part 3 - Step 12](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/90283966/53fb6172-a6e3-4274-b7a8-36ef6a3dfc02)
+![Alt text](<Images/GA4 - Lets Create Some Pages - Step 13.png>)
 
 14. If we navigate to /cities/create we will show the Create page.
 
-![GA4 - Part 3 - Step 13](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/90283966/b1a3f8d0-aa65-4e8a-9985-67a43cddc8b2)
+![Alt text](<Images/GA4 - Lets Create Some Pages - Step 14.png>)
 
 15. If we navigate to /cities/1 we will show the Details page
 
-![GA4 - Part 3 - Step 14](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/90283966/e8599f1b-ca6c-4fe2-b066-630cc8cd8daf)
+![Alt text](<Images/GA4 - Lets Create Some Pages - Step 15.png>)
 
 16. Verify that these routes are working by running the app and navigating to them.
 17. Take a screenshot of each page and save them to your screenshots folder.
@@ -104,25 +103,26 @@ This repository is a part of CSI-248 at Renton Technical College.
 20. `git push`
 
 ## Create navigation and Context
+
 1. Create a Components folder inside of the src folder.
 2. Add a Navigation.jsx component to that folder.
 3. At its core a navbar is simply a styled list of links.
 4. We will be using the Link component from react-router-dom.
 5. Replace the code inside of Navigation.jsx with the following:
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/622c6c07-e3b0-4744-99c6-61cc17c54cf0)
+![Alt text](<Images/GA4 - Create Navigation and Content - Step 5.png>)
 
 6. Notice that the to attribute of these links is the same as some of the routes you define earlier.
 7. Import Nagivation to App.jsx and render it within the browser router but before the routes.
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/3c12a6be-7b8d-494e-88fe-60b69538a768)
+![Alt text](<Images/GA4 - Create Navigation and Content - Step 7.png>)
 
 8. Run the app and verify that Nagivation is working:
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/00bc1820-97b1-421d-bf95-c1b0b2ae773d)
+![Alt text](<Images/GA4 - Create Navigation and Content - Step 8.png>)
 
 9. Take a screenshot of the browser and add it to your Screenshots folder.
-10.  It is now time to useContext.
+10. It is now time to useContext.
 11. Context is a global state container that can be used by any component without passing via props.
 12. We are going to add two things to context. The list of cities and a function for creating a new city.
 13. citiesList will be tracked by state in App.jsx but shared with the other pages via context.
@@ -135,42 +135,43 @@ This repository is a part of CSI-248 at Renton Technical College.
 17. Inside of the App() function but before the return statement add the cities to a state variable called citiesList.
 18. Also inside of App() and before the return statement create a function that takes a city as a parameter, assigns it an id and then uses setCitiesList to update the list.
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/9a7cba71-4ed8-43f9-9eff-8a395c3462a8)
+![Alt text](<Images/GA4 - Create Navigation and Content - Step 18.png>)
 
 19. We are now ready to create a ContextContainer. This is done using the createContext method that we imported earlier.
 20. Create a CitiesContext before the function App()
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/498478cf-da09-4c88-9d36-69a989f75eee)
+![Alt text](<Images/GA4 - Create Navigation and Content - Step 20.png>)
 
 21. Our new CitiesContext is ready to be used. We need to wrap all elements that will have access to this Context in a CitiesContext.Provider component. The value attribute will be used to specify which object we would like to provide through this context.
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/6d94b702-ea8b-4634-9fbc-f29a8b8318b1)
+![Alt text](<Images/GA4 - Create Navigation and Content - Step 21.png>)
 
 22. We have wrapped all of our routes with our new Context and added both citiesList and createCity to that context. We now must also export the CitiesContext so that it can be imported by our other pages. Add the following to the bottom of App.jsx
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/192a8746-e4cf-4373-a04c-4d03af0a7a01)
+![Alt text](<Images/GA4 - Create Navigation and Content - Step 22.png>)
 
 23. `git add .`
 24. `git commit -m "Context added"`
 25. `git push`
 
 ## Accessing the Context
+
 1. Lets work on the Details page first.
 2. In the route created for the details page we can see that details takes an id.
 3. We will need to get that id from the route and then go through the citiesList to find the city with a matching id.
 4. We will need access to the citiesList from context as well as the useParams method from react-router-dom to get the id from the route.
 5. import the following at the top of Details.jsx
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/0fe973bc-5ea2-4fe6-b3fa-bbee621d7bb7)
+![Alt text](<Images/GA4 - Accessing the Context - Step 5.png>)
 
 6. useContext allows us to access our CitiesContext, useParams() will give us the id from the url
 7. Replace the Details function with the following code:
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/b0a74658-7a06-41fb-a668-0f8301247796)
+![Alt text](<Images/GA4 - Accessing the Context - Step 7.png>)
 
 8. Run the app and test it out. If you navigate to /cities/1 you should see the following:
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/f571488e-9e64-447f-ada6-2d5d1eef3bbb)
+![Alt text](<Images/GA4 - Accessing the Context - Step 8.png>)
 
 9. Providing a different id will give you a different city.
 10. Take a screenshot of the browser and save it to your Screenshots folder.
@@ -179,15 +180,15 @@ This repository is a part of CSI-248 at Renton Technical College.
 12. The List page will import useContext, CitiesContext, and Link
 13. At the top of the List page add the following:
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/403ff7bb-660b-4c84-a86e-7d31ed031375)
+![Alt text](<Images/GA4 - Accessing the Context - Step 13.png>)
 
 14. Replace the List Function with the following:
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/3018da43-3a6c-400d-aa5a-469729756adb)
+![Alt text](<Images/GA4 - Accessing the Context - Step 14.png>)
 
 15. You should now have a functioning list page that links to the details page.
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/a4365894-31ed-49d6-b584-8495c96dcc56)
+![Alt text](<Images/GA4 - Accessing the Context - Step 15.png>)
 
 16. Take a screenshot of the browser and save it to your Screenshots folder.
 17. `git add .`
@@ -195,6 +196,7 @@ This repository is a part of CSI-248 at Renton Technical College.
 19. `git push`
 
 ## The Create Page
+
 1. Our create page will allow the user to add a new city to the list.
 2. It will contain a form and need access to the creatCity function that we added to Context.
 3. We will need useContext and the CitiesContext for create.
@@ -202,35 +204,35 @@ This repository is a part of CSI-248 at Renton Technical College.
 5. Lets start with the HTML for this page first since it is fairly long.
 6. Create an HTML form for adding a city and set the onSubmit event to call a function called handleSubmit
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/5e29b9e5-a042-4e61-95c1-be5d21023992)
+![Alt text](<Images/GA4 - The Create Page - Step 6.png>)
 
 7. Now lets work on our handleSubmit function. This function will take in an event. The event will have the information from the form. By default events cause a page refresh which we do not want since we are handling the client side. Prevent the default refresh and then get the data from the form. We then pass the data to the createCity function and reset the form.
 
 8. Replace the code inside of Create() with the following:
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/72825268-d3c3-44a3-9c58-dabb4eab1cf2)
+![Alt text](<Images/GA4 - The Create Page - Step 8.png>)
 
 9. Use the form to create a new City.
 
-![GA4 - Part 6 - Step 8](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/90283966/87970d1a-c418-434b-ada0-f015fdd4ee0d)
+![Alt text](<Images/GA4 - The Create Page - Step 9.png>)
 
 10. Navigate to the Cities List and you should see your new City added to the list.
 
-![GA4 - Part 6 - Step 9](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/90283966/a5d5710a-1fea-42cf-a000-9b58dc7e0c1f)
+![Alt text](<Images/GA4 - The Create Page - Step 10.png>)
 
 11. Click on the new city and observe the Details page.
 
-![GA4 - Part 6 - Step 10](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/90283966/a75ce95a-b939-45d6-af58-9784682cf880)
+![Alt text](<Images/GA4 - The Create Page - Step 11.png>)
 
 12. Add styling to the navbar so that it looks like navigation and not simply a list of links.
 13. Style the form so that it is centered and inside of a container.
 14. You may use any css library that you wish or write your own.
 15. Here is an example. You do not need to match it exactly.
 
-![image](https://github.com/EmeryCSI/CSI248F23_GuidedActivity4/assets/102991550/2a1dc3a8-56b0-4368-b6c7-edadbfddb819)
+![Alt text](<Images/GA4 - The Create Page - Step 15.png>)
 
 16. `git add .`
 17. `git commit -m "Assignment Complete"`
 18. `git push`
 
-If you have any questions about this assignment please reach out to myself or our TA for this course. 
+If you have any questions about this assignment please reach out to myself or our TA for this course.
